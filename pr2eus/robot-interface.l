@@ -2,6 +2,7 @@
 ;;; robot interface to ROS based pr2 system
 ;;;
 (ros::load-ros-manifest "roseus")
+(ros::roseus-add-msgs "rosgraph_msgs")
 (ros::load-ros-manifest "pr2_msgs")
 (ros::load-ros-manifest "pr2_controllers_msgs")
 ;;(ros::roseus-add-msgs "sensor_msgs") ;; roseus depends on sensor_msgs
